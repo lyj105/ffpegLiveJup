@@ -1,0 +1,47 @@
+﻿  pch.cpp
+  testLiveJup.cpp
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\ffmpegwin64\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(53): warning C4018: “<”: 有符号/无符号不匹配
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(55): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\ffmpegwin64\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(67): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\ffmpegwin64\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(82): warning C4018: “<”: 有符号/无符号不匹配
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(84): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\ffmpegwin64\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(102): warning C4996: 'AVFormatContext::filename': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\ffmpegwin64\include\libavformat\avformat.h(1417): note: 参见“AVFormatContext::filename”的声明
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(108): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int64_t”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(108): note: 请考虑在格式字符串中使用“%lld”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(108): note: 请考虑在格式字符串中使用“%Id”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(108): note: 请考虑在格式字符串中使用“%I64d”
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(124): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int64_t”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(124): note: 请考虑在格式字符串中使用“%lld”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(124): note: 请考虑在格式字符串中使用“%Id”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(124): note: 请考虑在格式字符串中使用“%I64d”
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(125): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int64_t”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(125): note: 请考虑在格式字符串中使用“%lld”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(125): note: 请考虑在格式字符串中使用“%Id”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(125): note: 请考虑在格式字符串中使用“%I64d”
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(130): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int64_t”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(130): note: 请考虑在格式字符串中使用“%lld”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(130): note: 请考虑在格式字符串中使用“%Id”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(130): note: 请考虑在格式字符串中使用“%I64d”
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(140): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int64_t”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(140): note: 请考虑在格式字符串中使用“%lld”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(140): note: 请考虑在格式字符串中使用“%Id”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(140): note: 请考虑在格式字符串中使用“%I64d”
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(141): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int64_t”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(141): note: 请考虑在格式字符串中使用“%lld”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(141): note: 请考虑在格式字符串中使用“%Id”
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(141): note: 请考虑在格式字符串中使用“%I64d”
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(142): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\ffmpegwin64\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(143): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\ffmpegwin64\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\testlivejup\testlivejup.cpp(38): warning C4996: 'av_register_all': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\testlivejup\ffmpegwin64\include\libavformat\avformat.h(2043): note: 参见“av_register_all”的声明
+  正在生成代码
+  All 4 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  testLiveJup.vcxproj -> F:\live\ffmpeg\FFmpegSoftwore\ffpegLiveJup\x64\Release\testLiveJup.exe

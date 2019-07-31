@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  BscoLivePush.cpp
+  VideoRetmp.cpp
+f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\videoretmp.cpp(44): error C4996: 'av_register_all': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(2043): note: 参见“av_register_all”的声明
