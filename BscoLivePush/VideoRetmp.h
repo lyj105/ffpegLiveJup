@@ -32,12 +32,12 @@ class BossLiveRept
 			int GetBossLivePushRetp();
 			int print_avError(int errNum);
 		private:
-			const char *inUrl;
-			const char *outUrl;
+			//const char *inUrl;
+			//const char *outUrl;
 
-			AVFormatContext *input_ctx;
-			AVOutputFormat *output_fmt;
-			AVFormatContext * output_ctx;
+			//AVFormatContext *input_ctx;
+			//AVOutputFormat *output_fmt;
+			//AVFormatContext * output_ctx;
 
 
 

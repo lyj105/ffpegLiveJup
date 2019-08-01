@@ -6,11 +6,7 @@ using namespace std;
 
 BossLiveRept::BossLiveRept() {
 	
-	input_ctx = NULL;
-    output_fmt = NULL;
-	output_ctx = NULL;
-	inUrl = "test.mp4";
-	outUrl = "rtmp://push-play.bosscome.com/appp/inster?auth_key=1564492592-0-0-30fb8531f6fcb60b3a85c51ff61fb66c__";
+	
 };
 
 BossLiveRept::~BossLiveRept() {
@@ -19,21 +15,22 @@ BossLiveRept::~BossLiveRept() {
 };
 
 int BossLiveRept::GetBossLivePushRetp() {
-
 	int videoindex = -1;
-
 	av_register_all();
 	avformat_network_init();
 
+	const char *inUrl = "test.mp4";
+	const char *outUrl = "rtmp://push-play.bosscome.com/appp/inster?auth_key=1564492592-0-0-30fb8531f6fcb60b3a85c51ff61fb66c";
 
+	AVFormatContext *input_ctx = NULL;
+	AVOutputFormat *output_fmt = NULL;
 
 	int ret = avformat_open_input(&input_ctx, inUrl, 0, NULL);
 	if (ret < 0)
 	{
 		return print_avError(ret);
 	}
-
-	printf("%c", "avformat_open_input success!");
+	cout << "avformat_open_input success!" << endl;
 
 	ret = avformat_find_stream_info(input_ctx, 0);
 	if (ret != 0)
@@ -43,71 +40,72 @@ int BossLiveRept::GetBossLivePushRetp() {
 
 	av_dump_format(input_ctx, 0, inUrl, 0);
 
+	AVFormatContext * output_ctx = NULL;
+	//如果是输入文件 flv可以不传，可以从文件中判断。如果是流则必须传
 	ret = avformat_alloc_output_context2(&output_ctx, NULL, "flv", outUrl);
-	if (ret < 0) {
+	if (ret < 0)
+	{
 		return print_avError(ret);
 	}
-
 	cout << "avformat_alloc_output_context2 success!" << endl;
 
 	output_fmt = output_ctx->oformat;
-
 	cout << "nb_streams: " << input_ctx->nb_streams << endl;
 
 	unsigned int i;
-
 	for (i = 0; i < input_ctx->nb_streams; i++)
 	{
 		AVStream *in_stream = input_ctx->streams[i];
 		AVStream *out_stream = avformat_new_stream(output_ctx, in_stream->codec->codec);
-
-		if (!out_stream) {
-
+		if (!out_stream)
+		{
 			printf("未能成功添加音视频流\n");
 			ret = AVERROR_UNKNOWN;
 		}
 
 		//将输入编解码器上下文信息 copy 给输出编解码器上下文
+		//ret = avcodec_copy_context(out_stream->codec, in_stream->codec);
 		ret = avcodec_parameters_copy(out_stream->codecpar, in_stream->codecpar);
-
-		if (ret < 0) {
+		//ret = avcodec_parameters_from_context(out_stream->codecpar, in_stream->codec);
+		//ret = avcodec_parameters_to_context(out_stream->codec, in_stream->codecpar);
+		if (ret < 0)
+		{
 			printf("copy 编解码器上下文失败\n");
 		}
-
 		out_stream->codecpar->codec_tag = 0;
 
 		out_stream->codec->codec_tag = 0;
-		if (output_ctx->oformat->flags & AVFMT_GLOBALHEADER) {
+		if (output_ctx->oformat->flags & AVFMT_GLOBALHEADER)
+		{
 			out_stream->codec->flags = out_stream->codec->flags | AV_CODEC_FLAG_GLOBAL_HEADER;
 		}
-
 	}
 
-	//查找到当前输入流中的视频流，并记录视频流的索引
 	for (i = 0; i < input_ctx->nb_streams; i++)
 	{
-		if (input_ctx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO) {
+		if (input_ctx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO)
+		{
 			videoindex = i;
 			break;
 		}
 	}
-
 	cout << "videoindex: " << videoindex << endl;
 	av_dump_format(output_ctx, 0, outUrl, 1);
 
 	ret = avio_open(&output_ctx->pb, outUrl, AVIO_FLAG_WRITE);
-	if (ret < 0) {
-		print_avError(ret);
+	if (ret < 0)
+	{
+		return print_avError(ret);
 	}
 
 	//写入头部信息
 	ret = avformat_write_header(output_ctx, 0);
-	if (ret < 0) {
-		print_avError(ret);
+	if (ret < 0)
+	{
+		return print_avError(ret);
 	}
 
 	cout << "avformat_write_header Success!" << endl;
-
 	//推流每一帧数据
 	//int64_t pts  [ pts*(num/den)  第几秒显示]
 	//int64_t dts  解码时间 
@@ -116,7 +114,7 @@ int BossLiveRept::GetBossLivePushRetp() {
 	//int stream_index
 	//int flag
 	AVPacket pkt;
-	//获取当前时间戳
+	//获取当前的时间戳  微妙
 	long long start_time = av_gettime();
 	long long frame_index = 0;
 	while (1)
@@ -195,15 +193,15 @@ int BossLiveRept::GetBossLivePushRetp() {
 		}
 		av_free_packet(&pkt);
 	}
-
 	return EXIT_SUCCESS;
+
 };
 
 int BossLiveRept::print_avError(int errNum)
 {
 	char buf[1024];
 	//获取错误信息
-	//av_strerror(errNum, buf, sizeof(buf));
+	av_strerror(errNum, buf, sizeof(buf));
 	cout << " failed! " << buf << endl;
 	return -1;
 };

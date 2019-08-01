@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BscoLivePush", "BscoLivePus
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestLivePush", "TestLivePush\TestLivePush.vcxproj", "{98946183-4BF7-42B4-9F92-BC5CAFA182BD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimplePlayer", "SimplePlayer\SimplePlayer.vcxproj", "{18759D79-F104-4E73-BACB-1296F2E90ADC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{98946183-4BF7-42B4-9F92-BC5CAFA182BD}.Release|x64.Build.0 = Release|x64
 		{98946183-4BF7-42B4-9F92-BC5CAFA182BD}.Release|x86.ActiveCfg = Release|Win32
 		{98946183-4BF7-42B4-9F92-BC5CAFA182BD}.Release|x86.Build.0 = Release|Win32
+		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Debug|x64.ActiveCfg = Debug|x64
+		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Debug|x64.Build.0 = Debug|x64
+		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Debug|x86.ActiveCfg = Debug|Win32
+		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Debug|x86.Build.0 = Debug|Win32
+		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Release|x64.ActiveCfg = Release|x64
+		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Release|x64.Build.0 = Release|x64
+		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Release|x86.ActiveCfg = Release|Win32
+		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
