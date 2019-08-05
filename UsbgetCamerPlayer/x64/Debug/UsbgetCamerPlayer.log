@@ -1,0 +1,9 @@
+﻿  UsbgetCamerPlayer.cpp
+f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\live\ffmpeg\ffmpegsoftwore\usbgetcamerplayer\usbgetcamerplayer.cpp(65): warning C4996: 'av_register_all': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(2043): note: 参见“av_register_all”的声明
+f:\live\ffmpeg\ffmpegsoftwore\usbgetcamerplayer\usbgetcamerplayer.cpp(61): warning C4101: “videoindex”: 未引用的局部变量
+f:\live\ffmpeg\ffmpegsoftwore\usbgetcamerplayer\usbgetcamerplayer.cpp(62): warning C4101: “pCodecCtx”: 未引用的局部变量
+f:\live\ffmpeg\ffmpegsoftwore\usbgetcamerplayer\usbgetcamerplayer.cpp(63): warning C4101: “pCodec”: 未引用的局部变量
+f:\live\ffmpeg\ffmpegsoftwore\usbgetcamerplayer\usbgetcamerplayer.cpp(61): warning C4101: “i”: 未引用的局部变量
+  UsbgetCamerPlayer.vcxproj -> F:\live\ffmpeg\FFmpegSoftwore\x64\Debug\UsbgetCamerPlayer.exe

@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestLivePush", "TestLivePus
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimplePlayer", "SimplePlayer\SimplePlayer.vcxproj", "{18759D79-F104-4E73-BACB-1296F2E90ADC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AVfilterPlayer", "AVfilterPlayer\AVfilterPlayer.vcxproj", "{521C3AF4-9F67-4D7C-BD77-E89D931BAAD6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UsbgetCamerPlayer", "UsbgetCamerPlayer\UsbgetCamerPlayer.vcxproj", "{DAC79907-2F20-409F-BAEC-D968C80D32CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +45,22 @@ Global
 		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Release|x64.Build.0 = Release|x64
 		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Release|x86.ActiveCfg = Release|Win32
 		{18759D79-F104-4E73-BACB-1296F2E90ADC}.Release|x86.Build.0 = Release|Win32
+		{521C3AF4-9F67-4D7C-BD77-E89D931BAAD6}.Debug|x64.ActiveCfg = Debug|x64
+		{521C3AF4-9F67-4D7C-BD77-E89D931BAAD6}.Debug|x64.Build.0 = Debug|x64
+		{521C3AF4-9F67-4D7C-BD77-E89D931BAAD6}.Debug|x86.ActiveCfg = Debug|Win32
+		{521C3AF4-9F67-4D7C-BD77-E89D931BAAD6}.Debug|x86.Build.0 = Debug|Win32
+		{521C3AF4-9F67-4D7C-BD77-E89D931BAAD6}.Release|x64.ActiveCfg = Release|x64
+		{521C3AF4-9F67-4D7C-BD77-E89D931BAAD6}.Release|x64.Build.0 = Release|x64
+		{521C3AF4-9F67-4D7C-BD77-E89D931BAAD6}.Release|x86.ActiveCfg = Release|Win32
+		{521C3AF4-9F67-4D7C-BD77-E89D931BAAD6}.Release|x86.Build.0 = Release|Win32
+		{DAC79907-2F20-409F-BAEC-D968C80D32CC}.Debug|x64.ActiveCfg = Debug|x64
+		{DAC79907-2F20-409F-BAEC-D968C80D32CC}.Debug|x64.Build.0 = Debug|x64
+		{DAC79907-2F20-409F-BAEC-D968C80D32CC}.Debug|x86.ActiveCfg = Debug|Win32
+		{DAC79907-2F20-409F-BAEC-D968C80D32CC}.Debug|x86.Build.0 = Debug|Win32
+		{DAC79907-2F20-409F-BAEC-D968C80D32CC}.Release|x64.ActiveCfg = Release|x64
+		{DAC79907-2F20-409F-BAEC-D968C80D32CC}.Release|x64.Build.0 = Release|x64
+		{DAC79907-2F20-409F-BAEC-D968C80D32CC}.Release|x86.ActiveCfg = Release|Win32
+		{DAC79907-2F20-409F-BAEC-D968C80D32CC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

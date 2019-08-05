@@ -1,0 +1,23 @@
+﻿  pch.cpp
+  AVfilterPlayer.cpp
+f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\live\ffmpeg\ffmpegsoftwore\avfilterplayer\avfilterplayer.cpp(87): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\avfilterplayer\avfilterplayer.cpp(112): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.18362.0\ucrt\stdio.h(1961): note: 参见“_snprintf”的声明
+f:\live\ffmpeg\ffmpegsoftwore\avfilterplayer\avfilterplayer.cpp(241): warning C4018: “<”: 有符号/无符号不匹配
+f:\live\ffmpeg\ffmpegsoftwore\avfilterplayer\avfilterplayer.cpp(242): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\avfilterplayer\avfilterplayer.cpp(251): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\avfilterplayer\avfilterplayer.cpp(167): warning C4996: 'av_register_all': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(2043): note: 参见“av_register_all”的声明
+f:\live\ffmpeg\ffmpegsoftwore\avfilterplayer\avfilterplayer.cpp(168): warning C4996: 'avfilter_register_all': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavfilter\avfilter.h(714): note: 参见“avfilter_register_all”的声明
+f:\live\ffmpeg\ffmpegsoftwore\avfilterplayer\avfilterplayer.cpp(209): warning C4996: 'avcodec_decode_video2': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavcodec\avcodec.h(4789): note: 参见“avcodec_decode_video2”的声明
+f:\live\ffmpeg\ffmpegsoftwore\avfilterplayer\avfilterplayer.cpp(216): warning C4996: 'av_frame_get_best_effort_timestamp': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavutil\frame.h(619): note: 参见“av_frame_get_best_effort_timestamp”的声明
+f:\live\ffmpeg\ffmpegsoftwore\avfilterplayer\avfilterplayer.cpp(367): warning C4996: 'av_free_packet': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavcodec\avcodec.h(4434): note: 参见“av_free_packet”的声明
+  AVfilterPlayer.vcxproj -> F:\live\ffmpeg\FFmpegSoftwore\x64\Debug\AVfilterPlayer.exe

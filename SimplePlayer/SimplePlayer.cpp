@@ -37,7 +37,7 @@ int main()
 	int ret, got_picture;
 	struct SwsContext *img_convert_ctx;
 
-	char filepath[] = "bigbuckbunny_480x272.h265";
+	char filepath[] = "demo.mp4";
 	//SDL---------------------------  
 	int screen_w = 0, screen_h = 0;
 	SDL_Window *screen;
@@ -69,6 +69,8 @@ int main()
 		printf("Didn't find a video stream.\n");
 		return -1;
 	}
+
+	printf("i___________ %d", pFormatCtx->nb_streams);
 
 	pCodecCtx = pFormatCtx->streams[videoindex]->codec;
 	pCodec = avcodec_find_decoder(pCodecCtx->codec_id);
@@ -107,7 +109,7 @@ int main()
 	screen_w = pCodecCtx->width;
 	screen_h = pCodecCtx->height;
 	//SDL 2.0 Support for multiple windows  
-	screen = SDL_CreateWindow("Simplest ffmpeg player's Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+	screen = SDL_CreateWindow("demo", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
 		screen_w, screen_h,
 		SDL_WINDOW_OPENGL);
 
@@ -161,13 +163,14 @@ int main()
 				//Delay 40ms  
 				SDL_Delay(40);
 			}
-			SaveFrame(pFrame, pCodecCtx->width, pCodecCtx->height, 1);
+			//SaveFrame(pFrame, pCodecCtx->width, pCodecCtx->height, 1);
 		}
 		av_free_packet(packet);
 	}
 	//flush decoder  
 	//FIX: Flush Frames remained in Codec  
-	while (1) {
+#if 0
+	while (0) {
 		ret = avcodec_decode_video2(pCodecCtx, pFrame, &got_picture, packet);
 		if (ret < 0)
 			break;
@@ -190,6 +193,9 @@ int main()
 		//Delay 40ms  
 		SDL_Delay(40);
 	}
+
+#endif
+
 
 	sws_freeContext(img_convert_ctx);
 

@@ -1,0 +1,24 @@
+﻿  pch.cpp
+  BscoLivePush.cpp
+f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\bscolivepush.cpp(26): warning C4996: 'av_register_all': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(2043): note: 参见“av_register_all”的声明
+  VideoRetmp.cpp
+f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\videoretmp.cpp(59): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\videoretmp.cpp(77): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\videoretmp.cpp(80): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\videoretmp.cpp(86): warning C4996: 'AVStream::codec': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(878): note: 参见“AVStream::codec”的声明
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\videoretmp.cpp(142): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\videoretmp.cpp(145): warning C4244: “=”: 从“double”转换到“int64_t”，可能丢失数据
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\videoretmp.cpp(147): warning C4244: “=”: 从“double”转换到“int64_t”，可能丢失数据
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\videoretmp.cpp(19): warning C4996: 'av_register_all': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavformat\avformat.h(2043): note: 参见“av_register_all”的声明
+f:\live\ffmpeg\ffmpegsoftwore\bscolivepush\videoretmp.cpp(194): warning C4996: 'av_free_packet': 被声明为已否决
+  f:\live\ffmpeg\ffmpegsoftwore\ffpeglib\include\libavcodec\avcodec.h(4434): note: 参见“av_free_packet”的声明
+  正在生成代码...
+  BscoLivePush.vcxproj -> F:\live\ffmpeg\FFmpegSoftwore\x64\Debug\BscoLivePush.exe

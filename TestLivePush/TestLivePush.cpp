@@ -43,8 +43,8 @@ int  getPushRetmpJUP() {
 	av_register_all();
 	avformat_network_init();
 
-	const char *inUrl = "test.mp4";
-	const char *outUrl = "rtmp://push-play.bosscome.com/appp/inster?auth_key=1564492592-0-0-30fb8531f6fcb60b3a85c51ff61fb66c";
+	const char *inUrl = "demo.mp4";
+	const char *outUrl = "rtmp://push-play.bosscome.com/app/insnexx?auth_key=1564913019-0-0-37af47acf3b38c55fc2059c2b1504e9d";
 
 	AVFormatContext *input_ctx = NULL;
 	AVOutputFormat *output_fmt = NULL;
